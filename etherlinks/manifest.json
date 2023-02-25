@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "EtherLinks",
     "description": "Add links to marketplaces on Etherscan",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
         "96": "icon96.png",
         "128": "icon128.png"
@@ -20,6 +20,8 @@
                 "images/gem-grayscale.svg",
                 "images/looksrare.svg",
                 "images/looksrare-grayscale.svg",
+                "images/magically.svg",
+                "images/magically-grayscale.svg",
                 "images/opensea.svg",
                 "images/opensea-grayscale.svg",
                 "images/x2y2.svg",

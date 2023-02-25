@@ -1,4 +1,4 @@
-// EtherLinks 1.0.0
+// EtherLinks 1.0.1
 // https://github.com/oe-d/etherlinks
 
 let page;
@@ -46,6 +46,8 @@ function get_url(site) {
             return 'https://gem.xyz/' + (page == 'address' ? 'profile/' : 'collection/') + address;
         case 'looksrare':
             return 'https://looksrare.org/' + (page == 'address' ? 'accounts/' : 'collections/') + address;
+        case 'magically':
+            return 'https://magically.gg/' + (page == 'address' ? 'portfolio/wallet/' : 'collection/') + address;
         case 'opensea':
             return 'https://' + (window.location.href.match(/goerli/) ? 'testnets.' : '') + 'opensea.io/' + (page == 'address' ? '' : 'assets?search[query]=') + address;
         case 'x2y2':
@@ -58,6 +60,7 @@ function create_buttons() {
     buttons.push({ url: get_url('looksrare'), img: 'images/looksrare-grayscale.svg', img_hover: 'images/looksrare.svg', tooltip: 'LooksRare' });
     buttons.push({ url: get_url('x2y2'), img: 'images/x2y2-grayscale.svg', img_hover: 'images/x2y2.svg', tooltip: 'X2Y2' });
     buttons.push({ url: get_url('blur'), img: 'images/blur-grayscale.svg', img_hover: 'images/blur.svg', tooltip: 'Blur' });
+    buttons.push({ url: get_url('magically'), img: 'images/magically-grayscale.svg', img_hover: 'images/magically.svg', tooltip: 'Magically' });
     buttons.push({ url: get_url('gem'), img: 'images/gem-grayscale.svg', img_hover: 'images/gem.svg', tooltip: 'Gem' });
 }
 
