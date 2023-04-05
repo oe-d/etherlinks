@@ -43,7 +43,7 @@ function get_url(site) {
         case 'blur':
             return 'https://blur.io/' + (page == 'address' ? '' : 'collection/') + address;
         case 'gem':
-            return 'https://gem.xyz/' + (page == 'address' ? 'profile/' : 'collection/') + address;
+            return 'https://pro.opensea.io/' + (page == 'address' ? 'profile/' : 'collection/') + address;
         case 'looksrare':
             return 'https://looksrare.org/' + (page == 'address' ? 'accounts/' : 'collections/') + address;
         case 'magically':
@@ -57,11 +57,11 @@ function get_url(site) {
 
 function create_buttons() {
     buttons.push({ url: get_url('opensea'), img: 'images/opensea-grayscale.svg', img_hover: 'images/opensea.svg', tooltip: 'OpenSea' });
+    buttons.push({ url: get_url('gem'), img: 'images/gem-grayscale.svg', img_hover: 'images/gem.svg', tooltip: 'OpenSea Pro' });
     buttons.push({ url: get_url('looksrare'), img: 'images/looksrare-grayscale.svg', img_hover: 'images/looksrare.svg', tooltip: 'LooksRare' });
     buttons.push({ url: get_url('x2y2'), img: 'images/x2y2-grayscale.svg', img_hover: 'images/x2y2.svg', tooltip: 'X2Y2' });
     buttons.push({ url: get_url('blur'), img: 'images/blur-grayscale.svg', img_hover: 'images/blur.svg', tooltip: 'Blur' });
     buttons.push({ url: get_url('magically'), img: 'images/magically-grayscale.svg', img_hover: 'images/magically.svg', tooltip: 'Magically' });
-    buttons.push({ url: get_url('gem'), img: 'images/gem-grayscale.svg', img_hover: 'images/gem.svg', tooltip: 'Gem' });
 }
 
 function is_unread() {
